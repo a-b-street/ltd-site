@@ -22,25 +22,45 @@
   the power of WebAssembly and serverless file formats.
 </p>
 
-<div style="display: flex; gap: 30px">
-  <a href="https://openstreetmap.org/about" target="_blank"
-    ><img
-      src="osm.webp"
-      alt="OpenStreetMap"
-      style="max-width: unset; height: 100px"
-  /></a>
-  <a href="https://rust-lang.org/" target="_blank"
-    ><img src="rust.svg" alt="Rust" style="max-width: unset; height: 100px"
-  /></a>
-  <a href="https://maplibre.org/" target="_blank"
-    ><img
-      src="maplibre.webp"
-      alt="MapLibre"
-      style="max-width: unset; height: 100px"
-  /></a>
-  <a href="https://svelte.dev/" target="_blank"
-    ><img src="svelte.svg" alt="Svelte" style="max-width: unset; height: 100px"
-  /></a>
+<style>
+  .row {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .row > div {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 10rem;
+  }
+</style>
+
+<div class="row">
+  <div>
+    <a href="https://openstreetmap.org/about" target="_blank"
+      ><img src="osm.webp" alt="OpenStreetMap"
+    /></a>
+  </div>
+  <div>
+    <a href="https://rust-lang.org/" target="_blank"
+      ><img src="rust.webp" alt="Rust"
+    /></a>
+  </div>
+  <div>
+    <a href="https://svelte.dev/" target="_blank"
+      ><img src="svelte.webp" alt="Svelte"
+    /></a>
+  </div>
+  <div>
+    <a href="https://maplibre.org/" target="_blank"
+      ><img src="maplibre.webp" alt="MapLibre"
+    /></a>
+  </div>
 </div>
 
 <p>
@@ -50,26 +70,26 @@
 
 <h2>About the team</h2>
 
-<div style="display: flex; gap: 20px">
-  <img src="dcarlino.webp" style="width: 80%; border-radius: 50%" />
-  <p>
-    A/B Street Ltd is a one-person consultancy run by Dustin Carlino, who has
-    been building open source transportation planning software since 2018. In
-    2020 he launched the alpha of
-    <a href="/projects/traffic_sim">A/B Street</a> (the company's namesake), a
-    gamified traffic simulation rendering OpenStreetMap data in unprecedented
-    detail and running entirely in a web browser. He spent the next year
-    prototyping more targeted tools like
-    <a href="/projects/lab"
-      >Ungap the Map and the 15-minute neighbourhood tool</a
-    >. He joined the Alan Turing Institute in 2022, built
-    <a href="https://od2net.org" target="_blank">od2net</a> and the first
-    version of the <a href="/projects/ltn">LTN tool</a>, then joined Active
-    Travel England on secondment for two years, building
-    <a href="/projects/pyats">Plan Your Active Travel Schemes</a> and
-    <a href="/projects/route_check">Route Check</a>. In early 2025, he formed
-    A/B Street Ltd to provide full-time software consultancy services, where he
-    has built two tools for Sustrans, including the
-    <a href="/projects/npw">Network Planning Workspace</a>.
-  </p>
-</div>
+<figure>
+  <img src="dcarlino.webp" style="border-radius: 50%; max-width: 5rem" />
+</figure>
+
+<p>
+  A/B Street Ltd is a one-person consultancy run by Dustin Carlino, who has been
+  building open source transportation planning software since 2018. In 2020 he
+  launched the alpha of
+  <a href="/projects/traffic_sim">A/B Street</a> (the company's namesake), a
+  gamified traffic simulation rendering OpenStreetMap data in unprecedented
+  detail and running entirely in a web browser. He spent the next year
+  prototyping more targeted tools like
+  <a href="/projects/lab">Ungap the Map and the 15-minute neighbourhood tool</a
+  >. He joined the Alan Turing Institute in 2022, built
+  <a href="https://od2net.org" target="_blank">od2net</a> and the first version
+  of the <a href="/projects/ltn">LTN tool</a>, then joined Active Travel England
+  on secondment for two years, building
+  <a href="/projects/pyats">Plan Your Active Travel Schemes</a> and
+  <a href="/projects/route_check">Route Check</a>. In early 2025, he formed A/B
+  Street Ltd to provide full-time software consultancy services, where he has
+  built two tools for Sustrans, including the
+  <a href="/projects/npw">Network Planning Workspace</a>.
+</p>

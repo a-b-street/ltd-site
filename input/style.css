@@ -21,6 +21,22 @@ body {
   grid-template-columns: 1fr 80% 1fr;
 }
 
+.nav-row {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .nav-row {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-around;
