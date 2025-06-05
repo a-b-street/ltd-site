@@ -10,7 +10,7 @@ function main() {
     "services/index.html": "Services",
 
     "news/index.html": "News",
-    "news/launch.html": "Launch (11 June 2025)",
+    "news/launch.html": "Launch (6 June 2025)",
 
     "projects/index.html": "Projects",
     "projects/lab/index.html": "Other in-progress projects",
