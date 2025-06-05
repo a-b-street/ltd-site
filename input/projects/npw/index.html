@@ -1,0 +1,114 @@
+<a href="..">&larr; Other projects</a>
+
+<p>Try it: <link href="https://npw.scot" /></p>
+<p>Code: <link href="https://github.com/nptscot/npw" /></p>
+<p>User manual: <link href="https://npw.scot/manual" /></p>
+
+<h2>About</h2>
+
+<p>
+  The Network Planning Workspace (NPW) is a web app for local authorities to
+  plan a cycle network. Users draw routes on the map to form the network,
+  starting from primary and secondary tiers that cover potential demand, and
+  then filling in local access connections and long-distance routes between
+  settlements. By looking at data on speed limit, traffic volume, and available
+  street width, NPW automatically picks an appropriate infrastructure type for
+  each section of a route. Users can address any constraints where a high Level
+  of Service cannot be achieved or where a street is too narrow to fit a
+  segregated cycletrack. As the network is built up, NPW displays a variety of
+  metrics to judge the performance of the network.
+</p>
+
+<div class="figure">
+  <img src="contextual_layers.webp" />
+  <p>
+    NPW exposes many contextual layers required for planning a cycle network.
+  </p>
+</div>
+
+<div class="figure">
+  <p>
+    The user draws a route by adding waypoints. NPW automatically picks an
+    appropriate infrastructure type.
+  </p>
+  <img src="drawing_route.webp" />
+</div>
+
+<div class="figure">
+  <img src="review_sections.webp" />
+  <p>
+    Reviewing the sections along this route, NPW flags a high-speed road where a
+    segregated cycletrack is insufficient to achieve a high Level of Service
+    without further interventions.
+  </p>
+</div>
+
+<div class="figure">
+  <p>
+    Despite being close to the primary network, access to a park is severed by a
+    road with high traffic volume. NPW automatically recommends a route to
+    connect it.
+  </p>
+  <img src="local_access.webp" />
+</div>
+
+<div class="figure">
+  <img src="demand.webp" />
+  <p>
+    Based on origin/destination data for commuting, school, and utility trips,
+    NPW calculates flow along the drawn network. Thick red and orange segments
+    show key connections with inadequate Level of Service, helping a user
+    prioritise filling in gaps. Evaluating the trips against the proposed
+    network takes only a few seconds in the browser.
+  </p>
+</div>
+
+<div class="figure">
+  <p>Details about one network quality metric</p>
+  <img src="safety.webp" />
+</div>
+
+<div class="figure">
+  <img src="metrics.webp" />
+  <p>A summary of changes to tier-specific metrics.</p>
+</div>
+
+<div class="figure">
+  <p>
+    Most of the direct routes between town centres have poor Level of Service,
+    indicating areas for further work.
+  </p>
+  <img src="directness.webp" />
+</div>
+
+<h2>Working with the stakeholder</h2>
+
+<p>
+  NPW was built for the
+  <a href="https://www.sustrans.org.uk" target="_blank">Sustrans</a> mobility
+  team, funded by
+  <a href="https://www.transport.gov.scot" target="_blank">Transport Scotland</a
+  >. The larger NPT project has been running for a few years with ITS Leeds data
+  science, and A/B Street Ltd joined in autumn 2024 to expand a static data
+  visualization tool into a first-of-kind interactive network planning tool. It
+  was very enjoyable working with Sustrans to turn the network quality metrics
+  -- safety, directness, coherence, comfort, and attractiveness -- into specific
+  quantifiable measurements that can be recalculated constantly.
+  <a href="https://www.cyclestreets.org" target="_blank">CycleStreets Ltd</a>
+  led the UX design, and together we transformed a swiss-army-knife tool into
+  carefully guided workflows using the
+  <a href="https://designsystem.gov.scot/" target="_blank"
+    >Scottish government design system</a
+  >. The initial feedback from local authorities has been incredibly detailed
+  and positive; with just cursory training on the tool, officers have built
+  reasonable network plans in an hour or two.
+</p>
+
+<h2>Status</h2>
+
+<p>
+  The initial development phase is finished, and NPW is ready to use. It's
+  undergoing a further review process before launch. There are many ideas for
+  further polish and expanding its scope. Currently it's limited to Scotland,
+  but A/B Street Ltd is available to adapt it elsewhere.
+</p>

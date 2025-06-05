@@ -1,0 +1,86 @@
+<a href="..">&larr; Other projects</a>
+
+<p>Try the alpha at <link href="https://plan.activetravelengland.gov.uk" /></p>
+<p>
+  Code: <link href="https://github.com/acteng/atip" />,
+  <link href="https://github.com/acteng/atip-data-prep" />,
+  <link href="https://github.com/acteng/scheme-sketcher-lib" />
+</p>
+
+<h2>About</h2>
+
+<p>
+  While Dustin was on secondment with
+  <a href="https://www.activetravelengland.gov.uk" target="_blank"
+    >Active Travel England</a
+  >
+  (ATE) from 2023 to 2025, he led development of PYATS.
+</p>
+
+<h2>Sketching schemes</h2>
+
+<img src="sketch.webp" width="80%" />
+
+<p>
+  Active Travel England is a central government agency, and needs to review
+  proposed schemes from authorities across the country. Authorities vary in
+  their technical GIS expertise, and have previously received the geographic
+  location of schemes in a variety of incompatible GIS formats, PDF maps, and
+  plaintext descriptions, making standardised and automated analysis nearly
+  impossible. Dustin developed PYATS to let authorities with any level of GIS
+  experience quickly draw schemes in their browser.
+</p>
+
+<p>
+  The project included a tool to trace routes snapped to existing roads, and
+  neighbourhood areas bounded by roads. The
+  <a href="https://github.com/dabreegster/route_snapper/" target="_blank"
+    >route snapper tool</a
+  >
+  developed for this is the first known open source approach for doing this
+  completely client-side, without a backend routing API. This simplified cloud
+  deployment, requiring only to host static files, and keeps the latency while
+  drawing absolutely minimal.
+</p>
+<p>
+  This sketch tool has been used by a variety of users to collect over 17,000
+  miles of routes, enabling analysis of funded schemes.
+</p>
+
+<h2>Browsing schemes with contextual layers</h2>
+
+<img src="browse.webp" width="80%" />
+
+<p>
+  Active Travel England's Inspectorate team reviews proposed schemes, finds
+  problems, and teaches guidance to local authorities to improve the designs. To
+  do their daily work, they need to consult dozens of different data sources for
+  road noise, pollution, census, traffic, collision statistics, and so on. Since
+  it's so tedious to switch between many tools and to relate them to sketched
+  schemes, Dustin developed the second part of PYATS, bringing together all
+  these layers in one place. This streamlines different review processes, seeing
+  submitted schemes alongside contextual layers. The specialised UI is much
+  faster for the specific Inspectorate tasks than off-the-shelf solutions like
+  ArcGIS.
+</p>
+
+<p>
+  This tool pulls together dozens of public and (internal only) private data
+  sources specific to England. The tool makes extensive use of
+  <a href="https://docs.protomaps.com/pmtiles/" target="_blank">PMTiles</a>, a
+  cloud-friendly vector tile format, to simplify hosting.
+</p>
+
+<h2>Working with the stakeholder</h2>
+
+<p>
+  Dustin worked directly with the users of PYATS (the Inspectorate and external
+  users responsible for sketching schemes). Regular feedback and shared
+  co-design sessions let the tool be perfectly fit-to-task. Dustin worked with
+  other members of ATE's data and digital team to develop and launch the tool,
+  and
+  <a href="https://www.linkedin.com/in/jadene-aderonmu-b4713771" target="_blank"
+    >Jadene Aderonmu</a
+  >
+  from Methods, who led user experience research and design.
+</p>
