@@ -11,6 +11,8 @@ function main() {
 
     "news/index.html": "News",
     "news/launch.html": "Launch (6 June 2025)",
+    "news/mw_2025/index.html":
+      "Modelling World and the Scottish Transport Awards (23 June 2025)",
 
     "projects/index.html": "Projects",
     "projects/lab/index.html": "Other in-progress projects",

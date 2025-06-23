@@ -1,0 +1,112 @@
+<a href=".">&larr; Other news</a>
+
+<h2>Manchester</h2>
+
+<p>
+  It's been a busy few weeks! First up was
+  <a href="https://www.modelling-world.com/conference-2025" target="_blank"
+    >Modelling World</a
+  >, where I had the chance to demo the
+  <a href="/projects/npw">Network Planning Workspace</a>. There were some
+  incredible talks about generating synthetic populations, building route choice
+  models for London cyclists, and using MATSim to study per-person exposure to
+  pollution. There was a theme of complex models needing to consider data
+  visualization and storytelling from the start.
+
+  <figure>
+    <img src="mw.webp" />
+    <figcaption>
+      Demonstrating NPW in a very loud room. Photo credit Robin Lovelace.
+    </figcaption>
+  </figure>
+
+  I also had a chance to properly wander around Manchester for the first time,
+  and really enjoy the public spaces in peak June weather.
+
+  <figure>
+    <img src="bee_filter.webp" />
+    <figcaption>The Bee Network branding was everywhere</figcaption>
+  </figure>
+</p>
+
+<h2>Glasgow</h2>
+
+Then it was off to Glasgow to attend the Scottish Transport Awards, where NPW
+was highly commended in the transport planning category.
+
+<figure>
+  <img src="awards.webp" />
+  <figcaption>Sadly, the full NPW team couldn't make it.</figcaption>
+</figure>
+
+I had a few day to explore Glasgow by bike, which really was the best way to get
+around. The segregated infrastructure I sampled all felt awesome, and the canal
+tow-paths were gorgeous. With a Sustrans colleague, I also cycled the
+<a
+  href="https://www.openstreetmap.org/relation/11017#map=12/55.9367/-4.4577"
+  target="_blank"
+  >National Cycle Network 7</a
+>
+to Loch Lomond.
+
+<figure>
+  <img src="ncn7.webp" />
+  <figcaption>
+    The NCN 7 never felt dull, constantly changing scenery.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="pavement_parking.webp" />
+  <figcaption>
+    For all of the time I spend behind a computer thinking about infrastructure
+    quality, it's always refreshing to experience some egregious pavement
+    parking firsthand.
+  </figcaption>
+</figure>
+
+<h2>Project updates</h2>
+
+<p>
+  In between the travel, I've had enough time to continue improving the NPW and
+  LTN tool. NPW has mostly been performance work, like avoiding overhead between
+  Rust and JS that happens with Comlink's structured cloning for web workers.
+  The LTN tool has a few new features:
+</p>
+
+<ol>
+  <li>
+    You can now easily compare a neighbourhood before and after your edits (<a
+      href="https://github.com/a-b-street/ltn/pull/379"
+      target="_blank"
+      >details</a
+    >)
+  </li>
+  <li>
+    You can reclassify local/main roads by snapping a route, instead of
+    tediously tracing small lines (<a
+      href="https://github.com/a-b-street/ltn/pull/382"
+      target="_blank"
+      >details</a
+    >)
+  </li>
+  <li>
+    More shortcuts are now detected correctly (<a
+      href="https://github.com/a-b-street/ltn/pull/381"
+      target="_blank"
+      >details</a
+    >)
+  </li>
+</ol>
+
+<p>
+  Finally, I've been experimenting with data in OpenStreetMap about crossings
+  and sidewalks mapped as parallel lines. There'll be much more to say about
+  that later, but I'm happy to report that an initial experiment to check
+  crossing frequency works fine in areas without detailed separate sidewalks.
+</p>
+
+<figure>
+  <img src="crossings.webp" />
+  <figcaption>Splitting big roads by crossing nodes</figcaption>
+</figure>
